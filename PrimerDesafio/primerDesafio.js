@@ -2,8 +2,8 @@ class Users {
   constructor({ name, lastName, books, pets }) {
     this.name = name;
     this.lastName = lastName;
-    this.books = books;
-    this.pets = pets;
+    this.books = [];
+    this.pets = [];
   }
 
   getFullName() {
@@ -19,8 +19,7 @@ class Users {
   };
 
   addBook(book, author) {
-    const addBook = [...this.book, { name: book, author }];
-    this.books = addBook;
+    return this.libros = [...this.libros, {titulo: book, autor:author}]
   }
 
   getBooks() {
