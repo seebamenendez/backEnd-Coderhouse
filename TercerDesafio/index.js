@@ -28,7 +28,7 @@ app.listen(port, () => {
     try {
     console.log(`Servidor iniciado en puerto ${port}`)
     }catch(err) {
-        console.log('ojota!!!',err)
+        console.log('ojo que no conecta',err)
     }
 })
 
@@ -36,7 +36,7 @@ app.listen(port, () => {
 app.get('/', (req, res) => {
     res.send(
 
-       ` <h1 style="color: blue" >Bienvenido al servidor de NNANDO</h1> `
+       ` <h1 style="color: blue" >Bienvenido al servidor de Sebastian</h1> `
 
     )
 } )
