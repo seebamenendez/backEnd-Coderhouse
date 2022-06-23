@@ -1,0 +1,21 @@
+extends layout/main.pug
+
+block main
+    section.productos
+        h2 PRODUCTOS
+            if items 
+                table
+                    tr
+                        th TITULO
+                        th PORTADA
+                        th PRECIO
+                    
+                
+                    each item in items
+                        tr
+                            td= item.title 
+                            td
+                                img(alt="item img", src=`${item.thumbnail}`)
+                            td= `$${item.price} USD`
+            else
+                p No hay productos cargados.
